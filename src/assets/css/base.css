@@ -1,0 +1,61 @@
+@import "./normalize.css";
+
+/**
+ * :root 获取根元素 html
+ */
+:root {
+    --color-text: #666;
+    --color-high-text: #d4237a;
+    --color-tint: #ff8198;
+    --color-background: #fff;
+    --font-size: 14px;
+    --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Microsoft YaHei UI", sans-serif;
+    user-select: none; /* 禁止用户鼠标在页面上选择文字/图片等*/
+    -webkit-tap-highlight-color: transparent; /* webkit tap点击 highlight 背光高亮 color 颜色 */
+    background: var(--color-background);
+    color: var(--color-text);
+    width: 100vm; /* rem vw vh*/
+}
+
+a{
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.clear-fix::after{
+    clear: both;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.clear-fix{
+    zoom: 1;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+
+
